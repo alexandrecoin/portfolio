@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background: #d3d3d3;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content,
+.columns {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+  order: 2;
+}
+.sidebar-first,
+.sidebar-second {
+  width: 20%;
+}
+
+.sidebar-first {
+  order: 1;
+}
+
+.sidebar-second {
+  order: 3;
+}
