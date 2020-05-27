@@ -1,23 +1,23 @@
 var experience = [
   {
-    jobTitle: 'job1',
-    companyName: '',
-    jobEntryDate: '',
-    jobEndDate: '',
+    title: 'Junior R&D Engineer',
+    companyName: 'Cubyn',
+    startDate: '',
+    endDate: '',
     description: '',
   },
   {
-    jobTitle: 'job2',
+    title: 'JS/TS Full-Stack Developer',
     companyName: '',
-    jobEntryDate: '',
-    jobEndDate: '',
+    startDate: '',
+    endDate: '',
     description: '',
   },
   {
-    jobTitle: 'job3',
+    title: 'JS Full-Stack Developer',
     companyName: '',
-    jobEntryDate: '',
-    jobEndDate: '',
+    startDate: '',
+    endDate: '',
     description: '',
   },
 ];
@@ -46,8 +46,9 @@ function renderJobs() {
   var experienceUl = document.getElementById('experience');
   for (let i = 0; i < experience.length; i++) {
     var newLi = document.createElement('li');
-    newLi.appendChild(document.createTextNode(experience[i].jobTitle));
+    newLi.appendChild(document.createTextNode(experience[i].title));
     experienceUl.appendChild(newLi);
+    experienceUl.style.listStyleType = 'none';
   }
 }
 
@@ -57,6 +58,7 @@ function renderBackground() {
     var newLi = document.createElement('li');
     newLi.appendChild(document.createTextNode(background[i].diploma));
     backgroundUl.appendChild(newLi);
+    backgroundUl.style.listStyleType = 'none';
   }
 }
 
