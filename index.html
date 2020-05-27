@@ -8,11 +8,11 @@
       rel="stylesheet"
     />
     <link href="./styles.css" rel="stylesheet" />
+    <link href="./dark-mode.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <section class="content">
         <div class="columns">
           <div class="main">
             <h1>Resume</h1>
@@ -59,7 +59,16 @@
             </form>
           </div>
           <div class="sidebar-first"></div>
-          <div class="sidebar-second"></div>
+          <div class="sidebar-second">      
+            <section class="content">
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+              <em>Light / Dark</em>
+            </div>
+          </div>
         </div>
       </section>
     </div>

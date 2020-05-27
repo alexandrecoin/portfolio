@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  background: #d3d3d3;
+  /* background: #d3d3d3; */
   font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 .wrapper {
   min-height: 100vh;
