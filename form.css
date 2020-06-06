@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form .row {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  min-height: 8em;
+}

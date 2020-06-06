@@ -2,15 +2,16 @@
   --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #424242;
-  --bg-color: #fff;
+  --bg-color: #f1f1f1;
   --heading-color: #292922;
 }
 
 [data-theme='dark'] {
+  --card-color: #403f3d;
   --primary-color: #9a97f3;
   --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
+  --font-color: #e1e1dd;
+  --bg-color: #272727;
   --heading-color: #818cab;
 }
 
@@ -75,4 +76,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.card {
+  background-color: var(--card-color);
 }

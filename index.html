@@ -9,7 +9,15 @@
     />
     <link href="./styles.css" rel="stylesheet" />
     <link href="./dark-mode/dark-mode.css" rel="stylesheet" />
-    <title>Alex. Coin - Resume</title>
+    <link href="./form.css" rel="stylesheet" />
+    <link href="./card.css" rel="stylesheet" />
+    <script type="text/javascript" src="./index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="./dark-mode/dark-mode.js"
+      defer
+    ></script>
+    <title>Alexandre C. - Resume</title>
   </head>
   <body>
     <div class="wrapper">
@@ -31,8 +39,18 @@
               Hello ! I'm Alexandre, a French full-stack developer 🇫🇷. My resume
               is on its way to be done, please wait a little bit more. You'll
               find nothing fancy here, my resume as well as links to my works
-              and a contact form down below if you ever want to work with me.
+              and a contact form down below if you ever want to work with me. ✌️
             </p>
+          </div>
+          <div>
+            <h2>What I've done</h2>
+            <div class="card">
+              <img src="./assets/mysg.png" alt="mysg" style="width:100%" />
+              <div class="container">
+                <h4>My-Serious-Game (Tours)</h4>
+                <p>Back-end for IFSImulation</p>
+              </div>
+            </div>
           </div>
           <div id="experience">
             <h2>Work experience</h2>
@@ -44,7 +62,7 @@
           </div>
           <h2>Contact</h2>
           <form>
-            <div>
+            <div class="row">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -53,7 +71,7 @@
                 placeholder="Enter your email"
               />
             </div>
-            <div>
+            <div class="row">
               <label for="subject">Subject</label>
               <input
                 type="text"
@@ -62,15 +80,15 @@
                 placeholder="Subject"
               />
             </div>
-            <label for="message">Message</label>
-            <textarea name="message">How can I help you ?</textarea>
+            <div class="row">
+              <label for="message">Message</label>
+              <textarea name="message">How can I help you ?</textarea>
+            </div>
           </form>
         </div>
         <div class="sidebar-first"></div>
         <div class="sidebar-second"></div>
       </div>
     </div>
-    <script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript" src="./dark-mode/dark-mode.js"></script>
   </body>
 </html>
