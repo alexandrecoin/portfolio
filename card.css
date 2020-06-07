@@ -2,19 +2,18 @@
   --border-radius: 15px;
 }
 
-.card {
+#card {
   /* Add shadows to create the "card" effect */
   transition: 0.3s;
   max-width: 30%;
   border-radius: var(--border-radius);
-  box-shadow: 9px 9px 26px #171717, -9px -9px 26px #373737;
 }
 
 img {
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
 }
 
-.card:hover {
+#card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }

@@ -37,9 +37,18 @@ var background = [
   },
 ];
 
+var works = [
+  {
+    imgUrl: './assets/mysg.png',
+    company: 'My-Serious-Game (Tours)',
+    job: 'Back-end for IFSImulation',
+  },
+];
+
 function init() {
   renderJobs();
   renderBackground();
+  // renderWorks();
 }
 
 function renderJobs() {
@@ -47,9 +56,9 @@ function renderJobs() {
   for (let i = 0; i < experience.length; i++) {
     var newLi = document.createElement('li');
     let expTemplate1 = `
-      ${experience[i].title} • ${experience[i].companyName} • ${experience[i].startDate} - ${
-        experience[i].endDate
-      }
+      ${experience[i].title} • ${experience[i].companyName} • ${
+      experience[i].startDate
+    } - ${experience[i].endDate}
     ${experience[i].description}
     `;
     newLi.appendChild(document.createTextNode(expTemplate1));
@@ -67,6 +76,16 @@ function renderBackground() {
     newLi.style.marginBottom = '0.5em';
     backgroundUl.appendChild(newLi);
     backgroundUl.style.listStyleType = 'none';
+  }
+}
+
+function renderWorks() {
+  var element = document.getElementById('cards');
+  for (let i = 0; i < works.length; i++) {
+    var img = document.createElement('img');
+    img.src = works[i].imgUrl;
+    var imgDiv = document.getElementById('imagesDiv');
+    imgDiv.appendChild(img);
   }
 }
 
